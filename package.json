@@ -1,7 +1,7 @@
 {
   "name": "electron-redux-actions",
   "version": "0.0.1",
-  "description": "Shared redux actions for all electron processes",
+  "description": "Redux middleware for sharing actions accross processes in electron.",
   "main": "./lib/index.js",
   "scripts": {
     "watch": "babel -w ./src -d ./lib",
