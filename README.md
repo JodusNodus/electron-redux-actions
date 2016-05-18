@@ -23,3 +23,5 @@ export default function configureStore(initialState) {
 Each action, foreign to the process has 2 extra key's:
 - **fromMain**, *bool*, wheter or not the action was dispatched from the main process.
 - **fromWindow**, *number*, the window ID of the process where the action was dispatched.
+
+To exclude an action from being dispatched to other processes just set `private` to `true` in the action.

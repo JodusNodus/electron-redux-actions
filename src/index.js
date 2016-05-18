@@ -12,7 +12,7 @@ export default function electronShare(store){
   return next => action => {
     let newAction = action
     let windows = (isRenderer ? remote.BrowserWindow : BrowserWindow).getAllWindows()
-    if(!action.fromWindow && !action.fromMain){
+    if(!action.fromWindow && !action.fromMain && !action.private){
       if(isRenderer){
         newAction = {
           ...action,
