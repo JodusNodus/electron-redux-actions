@@ -21,9 +21,6 @@
       "stage-0"
     ]
   },
-  "peerDependencies": {
-    "electron": "^0.4.1"
-  },
   "dependencies": {
     "is-electron-renderer": "^2.0.0"
   }
