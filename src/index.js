@@ -7,7 +7,11 @@ export default function electronShare(store){
 
   const handler = (event, action) => store.dispatch(action)
 
-  (isRenderer ? ipcMain : ipcRenderer).on(channel, handler)
+  if(isRenderer){
+    ipcRenderer.on(channel, handler)
+  }else{
+    ipcMain.on(channel, handler)
+  }
 
   return next => action => {
     let newAction = action

@@ -1,6 +1,6 @@
 {
   "name": "electron-redux-actions",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Redux middleware for sharing actions across processes in electron.",
   "main": "./lib/index.js",
   "scripts": {
@@ -21,8 +21,10 @@
       "stage-0"
     ]
   },
+  "peerDependencies": {
+    "electron": "^0.4.1"
+  },
   "dependencies": {
-    "electron": "^0.4.1",
     "is-electron-renderer": "^2.0.0"
   }
 }
